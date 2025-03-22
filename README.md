@@ -3,7 +3,9 @@
 1. **October 9, 2024:** Initial release.
 2. **March 22, 2025:** Release VQGAN and ViT-VQGAN config files and checkpoints. Also release pretrained model checkpoints for this repository (used to populate Table 1).
 
-This repository contains the official code for Restructuring Vector Quantization with the Rotation Trick.
+This repository contains the official code for Restructuring Vector Quantization with the Rotation Trick. 
+
+For new applications, we recommend lucidrains' excellent [vector-quantize library](https://github.com/lucidrains/vector-quantize-pytorch). This VQ library is highly optimized, available as a python package, and uses the rotation trick to propagate gradients through the VQ layer by default in the VectorQuantize class.
 
 ![logo](assets/rot_trick_logo.jpg)
 
