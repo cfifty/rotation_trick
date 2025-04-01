@@ -7,7 +7,7 @@ This repository contains the official code for Restructuring Vector Quantization
 
 For new applications, we recommend lucidrains' excellent [vector-quantize library](https://github.com/lucidrains/vector-quantize-pytorch). This VQ library is highly optimized, available as a python package, and uses the rotation trick to propagate gradients through the VQ layer by default in the VectorQuantize class.
 
-![logo](assets/rot_trick_logo.jpg)
+![logo](assets/rot_trick_logo.jpeg)
 
 **Restructuring Vector Quantization with the Rotation Trick**  
 Christopher Fifty, Ronald G. Junkins, Dennis Duan, Aniketh Iyengar, Jerry W. Liu, \
@@ -104,4 +104,17 @@ the [enhancing transformers codebase](https://github.com/thuanz123/enhancing-tra
 
 ```commandline
 CUDA_VISIBLE_DEVICES=0,1 python3 main.py -c config_file -lr 1e-4 -e 100 -ng 2
+```
+
+## Citation
+
+```bibtex
+@article{Fifty2024Restructuring,
+    title   = {Restructuring Vector Quantization with the Rotation Trick},
+    author  = {Christopher Fifty, Ronald G. Junkins, Dennis Duan, Aniketh Iyengar, Jerry W. Liu, Ehsan Amid, Sebastian Thrun, Christopher Ré},
+    journal = {ArXiv},
+    year    = {2024},
+    volume  = {abs/2410.06424},
+    url     = {https://api.semanticscholar.org/CorpusID:273229218}
+}
 ```
